@@ -8,7 +8,7 @@
 
 - `k8s/base/deployment.yaml`: เปลี่ยน `image` เป็น container image จริง
 - `k8s/base/deployment.yaml`: เปลี่ยน `containerPort` และ health-check path หากแอปไม่ได้ฟังที่ port `8080` หรือไม่ได้ใช้ `/`
-- `argocd/application.yaml`: เปลี่ยน `repoURL` เป็น URL ของ Git repository นี้
+- `argocd/application.yaml`: ใช้ URL repository ระดับ root เช่น `https://github.com/bomzaza/mybom-cd.git` ห้ามใช้ URL หน้าเว็บแบบ `/tree/main/...`
 
 ## ตรวจสอบ manifest
 
