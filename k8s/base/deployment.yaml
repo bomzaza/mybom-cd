@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: mybom
-          image: ghcr.io/REPLACE_ME/mybom:latest
+          image: nginx:stable
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
